@@ -1,1 +1,1 @@
-find . -name "*.sh" -exec basename {} .sh \; | sort -r | sed 's/$/\$/'
+find . -name "*.sh" -exec basename {} .sh \;
