@@ -1,1 +1,1 @@
-find . (-name 'a*' -o -name '*z' -o -name 'z*a!') > look
+find . ( -name 'a*' -o -name '*z' -o -name 'z*a!') > look
