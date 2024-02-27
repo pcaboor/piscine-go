@@ -1,1 +1,1 @@
-ls -p -A -m -U -t | grep -v '/|^\.' | sed 's/, \s*/,/g'
+ls -A -m -t | grep -v '/|^\.' | sed 's/, \s*/,/g'
