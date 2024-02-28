@@ -10,5 +10,4 @@ func main() {
 		z01.PrintRune(rRune)
 	}
 	z01.PrintRune('\n')
-
 }
