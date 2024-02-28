@@ -14,5 +14,5 @@ func PrintComb(){
         z01.PrintRune(44) // afficher des virgules
         z01.PrintRune(32) // afficher des espace 
 	}}}
-	    z01.PrintRune('\n') // afficher en ligne 
+ z01.PrintRune('\n') // afficher en ligne 
 }
