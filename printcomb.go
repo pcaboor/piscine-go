@@ -10,9 +10,11 @@ func PrintComb(){
          for z := y+1; z<= '9'; z++ {
 		z01.PrintRune(x) 
         z01.PrintRune(y)
-        z01.PrintRune(z)    
-        z01.PrintRune(44) // afficher des virgules
+        z01.PrintRune(z)
+           if x < 55 {
+             z01.PrintRune(44) // afficher des virgules
         z01.PrintRune(32) // afficher des espace 
+           }
 	}}}
  	  z01.PrintRune('\n') // afficher en ligne 
 }
