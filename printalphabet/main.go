@@ -5,9 +5,10 @@ import (
 )
 
 func main() {
+	var aRune rune
+	for aRune = 97; aRune <= 122; aRune++ {
+		z01.PrintRune(aRune)
 
-	for i := 'a'; i <= 'z'; i++ {
-		z01.PrintRune(i)
 	}
 	z01.PrintRune('\n')
 }
