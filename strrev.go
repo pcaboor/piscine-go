@@ -11,6 +11,6 @@ func StrRev(s string) string {
 package piscine
 
 func StrRev(s string) string {
-
-	return s
+	aString := []byte(s)
+	return string(aString)
 }
