@@ -1,12 +1,12 @@
 package piscine
 
 func StrLen(s string) int {
- count := 0
-  
-  for range s {
-    count++
-  }
+	count := 0
 
-  return count 
+	for range s {
+		count++
+	}
+
+	return count
 
 }
