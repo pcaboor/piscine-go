@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+
 	var numOne rune
 	for numOne = 48; numOne <= 57; numOne++ {
 		z01.PrintRune(numOne)
