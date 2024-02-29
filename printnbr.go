@@ -5,16 +5,21 @@ import (
 )
 
 func PrintNbr(n int) {
-	if n < 0 {
-		z01.PrintRune('-')
-		n = -n
-	}
+	var str string
+
 	if n == 0 {
 		z01.PrintRune('0')
 	}
-	if n > 0 {
+	if n < 0 {
+		str = "-"
+		n = -n
+	}
+	for n != 0 {
 		digit := n % 10
-		z01.PrintRune(rune(digit + '0'))
+		str = string(rune(digit+'0')) + str
 		n /= 10
+	}
+	for _, s := range str {
+		z01.PrintRune(s)
 	}
 }
