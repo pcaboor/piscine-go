@@ -6,5 +6,4 @@ func StrLen(s string) int {
 		count++
 	}
 	return count
-
 }
