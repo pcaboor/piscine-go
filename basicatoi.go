@@ -7,5 +7,4 @@ func BasicAtoi(s string) int {
 			int(numb-'0')
 	}
 	return myResult
-
 }
