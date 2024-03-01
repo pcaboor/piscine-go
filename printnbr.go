@@ -10,8 +10,7 @@ func PrintNbr(n int) {
 	if n < 0 {
 		n = -n
 		z01.PrintRune('-')
-	}
-	if n == 0 {
+	} else if n == 0 {
 		z01.PrintRune('0')
 	}
 
