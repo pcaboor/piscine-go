@@ -12,10 +12,8 @@ func Atoi(s string) int {
 		} else if b < '0' || b > '9' {
 			return 0
 		} else {
-
 			myResult = myResult*10 + int(b-'0')
 		}
-
 	}
 	return myResult * ponc
 }
