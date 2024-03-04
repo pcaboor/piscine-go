@@ -6,6 +6,7 @@ import (
 
 func PrintNbr(n int) {
 	var str string
+
 	if n < 0 {
 		n = -n
 		str = "-"
