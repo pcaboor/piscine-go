@@ -1,9 +1,9 @@
 package piscine
 
 func IterativeFactorial(nb int) int {
-	result := 1
-	for i := 1; i <= nb; i++ {
-		result = result * i
+	result := 0
+	for i := 0; i <= nb+1; i++ {
+		result = result + nb
 	}
 	return result
 }
