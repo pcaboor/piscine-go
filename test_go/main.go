@@ -1,16 +1,12 @@
 package main
 
 import (
+	"fmt"
 	"piscine"
-
-	"github.com/01-edu/z01"
 )
 
 func main() {
-	z01.PrintRune(piscine.NRune("Hello!", 3))
-	z01.PrintRune(piscine.NRune("Salut!", 2))
-	z01.PrintRune(piscine.NRune("Bye!", -1))
-	z01.PrintRune(piscine.NRune("Bye!", 5))
-	z01.PrintRune(piscine.NRune("Ola!", 4))
-	z01.PrintRune('\n')
+	s := "Hello 78 World!    4455 /"
+	nb := piscine.AlphaCount(s)
+	fmt.Println(nb)
 }
