@@ -13,5 +13,4 @@ func Sqrt(nb int) int {
 		}
 	}
 	return 0
-
 }
