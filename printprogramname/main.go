@@ -9,7 +9,9 @@ import (
 func main() {
 	a := os.Args[0]
 	for _, r := range a {
-		z01.PrintRune(r)
+		if r != '/' && r != '.' {
+			z01.PrintRune(r)
+		}
 	}
 	z01.PrintRune('\n')
 }
