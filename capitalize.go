@@ -11,7 +11,7 @@ func Capitalize(s string) string {
 				temp[i] -= 32
 			}
 			i++
-			for i < len(temp) && temp[i] >= 'a' && temp[i] <= 'z' || temp[i] >= 'A' && temp[i] <= 'Z' || temp[i] >= '0' && temp[i] <= '9' {
+			for i < len(temp) && (temp[i] >= 'a' && temp[i] <= 'z' || temp[i] >= 'A' && temp[i] <= 'Z' || temp[i] >= '0' && temp[i] <= '9') {
 				if temp[i] >= 'A' && temp[i] <= 'Z' {
 					temp[i] += 32
 				}
