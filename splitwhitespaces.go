@@ -8,7 +8,6 @@ func SplitWhiteSpaces(s string) []string {
 			if len(s[result+1:i]) > 0 {
 				if s[result+1:i] != " " {
 					tbstr = append(tbstr, s[result+1:i])
-
 				}
 				result = i
 			}
