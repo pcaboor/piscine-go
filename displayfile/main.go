@@ -17,13 +17,13 @@ func main() {
 	fileName := os.Args[1]
 	file, err := os.Open(fileName)
 	if err != nil {
-		fmt.Printf("File name missing")
+		fmt.Println(err.Error())
 		return
 	}
 	arr := make([]byte, 1024)
 	_, err = file.Read(arr)
 	if err != nil {
-		fmt.Printf("File name missing")
+		fmt.Println(err.Error())
 		return
 	}
 	fmt.Print(string(arr))
