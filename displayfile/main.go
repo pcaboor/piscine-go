@@ -20,11 +20,11 @@ func main() {
 		fmt.Printf("File name missing")
 		return
 	}
-	arr := make([]byte, 14)
+	arr := make([]byte, 1024)
 	_, err = file.Read(arr)
 	if err != nil {
 		fmt.Printf("File name missing")
 		return
 	}
-	fmt.Println(string(arr))
+	fmt.Print(string(arr))
 }
