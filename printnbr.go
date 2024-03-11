@@ -21,5 +21,4 @@ func PrintNbr(n int) {
 	for r := index - 1; r >= 0; r-- {
 		z01.PrintRune(rune('0' + tab[r]))
 	}
-
 }
