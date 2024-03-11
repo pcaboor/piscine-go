@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	if isEven(len(os.Args[1:])) {
 		printStr("I have an even number of arguments")
 	} else {
