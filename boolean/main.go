@@ -17,12 +17,14 @@ func main() {
 		printStr(OddMsg)
 	}
 }
+
 func printStr(s string) {
 	for _, r := range s {
 		z01.PrintRune(r)
 	}
 	z01.PrintRune('\n')
 }
+
 func isEven(nbr int) bool {
 	if nbr == 1 {
 		return true
