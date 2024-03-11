@@ -8,8 +8,8 @@ import (
 
 func main() {
 	lengthOfArg := len(os.Args) - 1
-	EvenMsg := "I have an odd number of arguments"
-	OddMsg := "I have an even number of arguments"
+	EvenMsg := "I have an even number of arguments"
+	OddMsg := "I have an odd number of arguments"
 
 	if isEven(lengthOfArg) {
 		printStr(EvenMsg)
