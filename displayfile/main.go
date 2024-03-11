@@ -15,7 +15,6 @@ func main() {
 		return
 	}
 	file, err := os.Open("sample.txt")
-
 	if err != nil {
 		fmt.Printf("File name missing")
 	}
