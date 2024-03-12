@@ -45,7 +45,6 @@ func main() {
 	}
 
 	fmt.Println(r)
-
 }
 
 func Atoi2(s string) (int, error) {
