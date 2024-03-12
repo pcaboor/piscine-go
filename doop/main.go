@@ -8,6 +8,8 @@ func main() {
 	if len(os.Args) != 4 { // vérifie qu'on entre les 3 arguments : value, operator et value2
 		return
 	}
+	const Max int = 1<<63 - 1
+	const Min int = -1 << 63
 	x := Atoi2(os.Args[1]) // convertir la première valeur en entier int
 	sign := os.Args[2]     // stock la deuxième valeur entant qu'opérateur
 	y := Atoi2(os.Args[3]) // convertir la troisième valeur en entier int
@@ -35,6 +37,9 @@ func main() {
 		}
 		r = x % y
 	default:
+		return
+	}
+	if r < Min || r > Max {
 		return
 	}
 	os.Stdout.WriteString(its(r) + "\n")
