@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"os"
 )
 
@@ -9,15 +8,10 @@ func main() {
 	if len(os.Args) != 4 { // vérifie qu'on entre les 3 arguments : value, operator et value2
 		return
 	}
-	x, err := Atoi2(os.Args[1]) // convertir la première valeur en entier int et gestion des erreurs
-	if err != nil {
-		return
-	}
-	sign := os.Args[2]          // stock la deuxième valeur entant qu'opérateur et gestion des erreurs
-	y, err := Atoi2(os.Args[3]) // convertir la troisième valeur en entier int et gestion des erreurs
-	if err != nil {
-		return
-	}
+	x := Atoi2(os.Args[1]) // convertir la première valeur en entier int
+	sign := os.Args[2]     // stock la deuxième valeur entant qu'opérateur
+	y := Atoi2(os.Args[3]) // convertir la troisième valeur en entier int
+
 	var r int
 
 	switch sign {
@@ -46,7 +40,7 @@ func main() {
 	os.Stdout.WriteString(its(r) + "\n")
 }
 
-func Atoi2(s string) (int, error) {
+func Atoi2(s string) int {
 	myResult := 0
 	ponc := 1
 
@@ -56,12 +50,12 @@ func Atoi2(s string) (int, error) {
 				ponc = -1
 			}
 		} else if b < '0' || b > '9' {
-			return 0, errors.New("invalid number")
+			os.Exit(0)
 		} else {
 			myResult = myResult*10 + int(b-'0')
 		}
 	}
-	return myResult * ponc, nil
+	return myResult * ponc
 }
 
 func its(i int) string {
