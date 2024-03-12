@@ -1,11 +1,8 @@
 package main
 
-import (
-	"fmt"
-	"piscine"
-)
+import "piscine"
 
 func main() {
-	elems := []string{"Hello!", " How", " are", " you?"}
-	fmt.Println(piscine.BasicJoin(elems))
+	a := []int{1, 2, 3, 4, 5, 6}
+	piscine.ForEach(piscine.PrintNbr, a)
 }
