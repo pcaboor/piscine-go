@@ -24,7 +24,7 @@ func main() {
 
 	case "/":
 		if y == 0 {
-			os.Stderr.WriteString("No divisible by 0\n")
+			os.Stderr.WriteString("No division by 0\n")
 			return
 		}
 		r = x / y
