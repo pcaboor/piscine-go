@@ -1,8 +1,11 @@
 package main
 
-import "piscine"
+import (
+	"fmt"
+	"piscine"
+)
 
 func main() {
-	a := piscine.SplitWhiteSpaces("Hello how are you?")
-	piscine.PrintWordsTables(a)
+	toConcat := []string{"Hello!", " How", " are", " you?"}
+	fmt.Println(piscine.Join(toConcat, ":"))
 }
