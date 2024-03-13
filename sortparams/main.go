@@ -1,8 +1,9 @@
 package main
 
 import (
-	"fmt"
 	"os"
+
+	"github.com/01-edu/z01"
 )
 
 func main() {
@@ -10,7 +11,8 @@ func main() {
 	for i := 0; i <= 127; i++ {
 		for _, arg := range args {
 			if len(arg) > 0 && int(arg[0]) == i {
-				fmt.Println(arg)
+				os.Stderr.WriteString(arg)
+				z01.PrintRune('\n')
 			}
 		}
 	}
