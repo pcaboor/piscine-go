@@ -5,7 +5,7 @@ func Join(strs []string, sep string) string {
 	for i, word := range strs {
 		res += word
 		if i != len(strs)-1 {
-			res += ":"
+			res += sep
 		}
 	}
 	return res
