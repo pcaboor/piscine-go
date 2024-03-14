@@ -11,7 +11,6 @@ type Door struct {
 func PrintStr(s string) {
 	for _, r := range s {
 		z01.PrintRune(r)
-		break
 	}
 	z01.PrintRune('\n')
 }
@@ -23,7 +22,7 @@ func OpenDoor(ptrDoor *Door) {
 
 func CloseDoor(ptrDoor *Door) {
 	PrintStr("Door Closing...")
-	ptrDoor.state = "OPEN"
+	ptrDoor.state = "CLOSE"
 }
 
 func IsDoorOpen(ptrDoor *Door) bool {
