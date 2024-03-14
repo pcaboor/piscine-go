@@ -5,40 +5,21 @@ import (
 	"piscine"
 )
 
+const N = 6
+
 func main() {
-	x := 5
-	y := &x
-	z := &y
-	a := &z
+	a := make([]string, N)
+	a[0] = "a"
+	a[2] = "b"
+	a[4] = "c"
 
-	w := 2
-	b := &w
+	for _, v := range a {
+		fmt.Println(v)
+	}
 
-	u := 7
-	e := &u
-	f := &e
-	g := &f
-	h := &g
-	i := &h
-	j := &i
-	c := &j
+	fmt.Println("Size after compacting:", piscine.Compact(&a))
 
-	k := 6
-	l := &k
-	m := &l
-	n := &m
-	d := &n
-
-	fmt.Println(***a)
-	fmt.Println(*b)
-	fmt.Println(*******c)
-	fmt.Println(****d)
-
-	piscine.Enigma(a, b, c, d)
-
-	fmt.Println("After using Enigma")
-	fmt.Println(***a)
-	fmt.Println(*b)
-	fmt.Println(*******c)
-	fmt.Println(****d)
+	for _, v := range a {
+		fmt.Println(v)
+	}
 }
