@@ -31,7 +31,6 @@ func IsDoorClose(ptrDoor *Door) bool {
 	return ptrDoor.state == "CLOSE"
 }
 
-
 func main() {
 	door := &Door{}
 
