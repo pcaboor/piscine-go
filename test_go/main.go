@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	toConcat := []string{"Hello!", " How", " are", " you?"}
-	fmt.Println(piscine.Join(toConcat, ":"))
+	middle := piscine.Abort(2, 3, 8, 5, 7)
+	fmt.Println(middle)
 }
