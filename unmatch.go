@@ -1,7 +1,6 @@
 package piscine
 
 func Unmatch(a []int) int {
-
 	for _, n := range a {
 		t := 0
 		for _, s := range a {
