@@ -15,6 +15,7 @@ func ListPushBack(l *List, data interface{}) {
 
 	if l.Head == nil {
 		l.Head = node
+		l.Tail = l.Head
 		return
 	}
 	current := l.Head
@@ -22,4 +23,5 @@ func ListPushBack(l *List, data interface{}) {
 		current = current.Next
 	}
 	current.Next = node
+	l.Tail = current.Next
 }
