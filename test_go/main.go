@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	a := []int{1, 2, 3, 1, 2, 3, 4}
-	unmatch := piscine.Unmatch(a)
-	fmt.Println(unmatch)
+	fmt.Print(piscine.FromTo(1, 10))
+	fmt.Print(piscine.FromTo(10, 1))
+	fmt.Print(piscine.FromTo(10, 10))
+	fmt.Print(piscine.FromTo(100, 10))
 }

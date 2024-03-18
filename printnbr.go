@@ -18,7 +18,7 @@ func PrintNbr(n int) {
 		if a != 0 {
 			PrintNbr(a)
 		}
-		numb := (n % 10 * ponc) + '0'
-		z01.PrintRune(rune(numb))
+		result := (n % 10 * ponc) + '0'
+		z01.PrintRune(rune(result))
 	}
 }
