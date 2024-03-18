@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-
 	"piscine"
 )
 
@@ -20,12 +19,10 @@ func PrintList(l *List) {
 
 func main() {
 	link := &List{}
-
 	piscine.ListPushBack(link, "I")
 	piscine.ListPushBack(link, 1)
 	piscine.ListPushBack(link, "something")
 	piscine.ListPushBack(link, 2)
-
 	fmt.Println("------list------")
 	PrintList(link)
 	piscine.ListClear(link)
