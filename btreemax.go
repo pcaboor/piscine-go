@@ -6,4 +6,3 @@ func BTreeMax(root *TreeNode) *TreeNode {
 	}
 	return BTreeMax(root.Right)
 }
-
