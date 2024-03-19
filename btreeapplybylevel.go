@@ -11,7 +11,6 @@ func BTreeApplyByLevel(root *TreeNode, f func(...interface{}) (int, error)) {
 		t = t[1:]
 
 		_, err := f(n.Data)
-		
 		if err != nil {
 			return
 		}
