@@ -21,5 +21,4 @@ func FromTo(from int, to int) string {
 
 	}
 	return res[:len(res)-2] + "\n"
-
 }
